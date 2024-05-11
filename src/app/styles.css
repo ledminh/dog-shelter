@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .paw-image-1 {
+    -webkit-mask-image: url("/images/paw1.svg");
+    mask-image: url("/images/paw1.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: 0% 100%;
+    background-image: url("/images/dog1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    @apply bg-primary-1;
+  }
+
+  .paw-image-2 {
+    -webkit-mask-image: url("/images/paw2.svg");
+    mask-image: url("/images/paw2.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: 0% 100%;
+    background-image: url("/images/dog2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    @apply bg-primary-1;
+  }
+
+  .paw-image-3 {
+    -webkit-mask-image: url("/images/paw3.svg");
+    mask-image: url("/images/paw3.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: 0% 100%;
+    background-image: url("/images/dog3.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    @apply bg-primary-1;
+  }
+
+  .paw-image-4 {
+    -webkit-mask-image: url("/images/paw4.svg");
+    mask-image: url("/images/paw4.svg");
+    mask-size: 100%;
+    mask-repeat: no-repeat;
+    mask-position: 0% 100%;
+    background-image: url("/images/dog4.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    @apply bg-primary-1;
+  }
+
+  .animated-paw {
+    animation: paw 2s infinite;
+  }
+
+  @keyframes paw {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+body {
+  background-color: #f3eeea;
+}
