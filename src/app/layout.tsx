@@ -3,6 +3,8 @@ import "./styles.css";
 import Logo from "@/components/Layout/Logo";
 import NavLink from "@/components/Layout/NavLink";
 
+import { navLinks } from "@/config";
+
 export const metadata = {
   title: "Dog Shelter",
   description: "A landing page for a dog shelter",
@@ -23,7 +25,7 @@ export default function RootLayout({
             </div>
             <div className="absolute top-4 right-4">
               <NavLink
-                href="/about"
+                href={navLinks.about}
                 firstLine="ABOUT US"
                 secondLine="WHO WE ARE"
               />
@@ -34,7 +36,7 @@ export default function RootLayout({
           </main>
           <footer className="absolute bottom-4 left-4">
             <NavLink
-              href="/contact"
+              href={navLinks.contact}
               firstLine="CONTACT"
               secondLine="GET IN TOUCH"
             />
