@@ -22,6 +22,7 @@ const config: Config = {
       },
       secondary: "#674F36",
       terinary: "#4b5563",
+      white: "#ffffff",
     },
   },
   plugins: [],
