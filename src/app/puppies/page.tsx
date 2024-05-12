@@ -18,7 +18,7 @@ export default function PuppiesPage() {
   return (
     <>
       <MainComponent dog={dogs[curDogI]} />
-      <div className="flex gap-2 absolute bottom-2 right-2">
+      <div className="flex gap-2 absolute bottom-4 right-4">
         <button
           className="bg-gray-400 px-4 py-2 font-semibold rounded-3xl hover:bg-gray-500"
           onClick={handlePrev}

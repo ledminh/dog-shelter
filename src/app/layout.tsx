@@ -4,6 +4,7 @@ import Logo from "@/components/Layout/Logo";
 import NavLink from "@/components/Layout/NavLink";
 
 import { navLinks } from "@/config";
+import Link from "next/link";
 
 export const metadata = {
   title: "Dog Shelter",
@@ -41,6 +42,12 @@ export default function RootLayout({
               secondLine="GET IN TOUCH"
             />
           </footer>
+          <Link
+            href="https://github.com/ledminh/dog-shelter"
+            className="absolute bottom-4 left-1/2 -translate-x-1/2"
+          >
+            source code
+          </Link>
         </div>
       </body>
     </html>
